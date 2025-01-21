@@ -242,7 +242,7 @@ body {
 }
   /* ExpenseDetail.CSS */
 
-  .amounts-container {
+  .amounts-container, .balance-container {
     display: flex;
     justify-content: space-between;
     align-items: center;

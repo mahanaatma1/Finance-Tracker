@@ -2,8 +2,8 @@ import React from 'react'
 
 function ExpenseDetails({ incomeAmt, expenseAmt }) {
     return (
-        <div>
-            <div>
+        <div >
+            <div className="balance-container">
                 Your Balance is ₹ {incomeAmt - expenseAmt}
             </div>
             {/* Show Income & Expense amount */}
