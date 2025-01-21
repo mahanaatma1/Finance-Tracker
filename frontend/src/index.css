@@ -1,0 +1,398 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f2f5;
+    overflow: hidden; /* Prevent body from scrolling */
+}
+
+/* Add this CSS to your stylesheet */ 
+.scrollable-container {
+    height: 80vh; /* Adjust height as needed */
+    overflow-y: scroll; /* Enable vertical scrolling */
+    padding: 20px;
+    background-color: #f0f2f5; /* Maintain consistency with your other styles */
+}
+
+.scrollable-container::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space for webkit browsers */
+    background: transparent; /* Optional: just to avoid the background */
+}
+
+.scrollable-container {
+    -ms-overflow-style: none;  /* Hide scrollbar in IE and Edge */
+    scrollbar-width: none;  /* Hide scrollbar in Firefox */
+}
+
+/* Login Styles */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+
+    .login-box {
+        background: linear-gradient(45deg, #ff73b3, #b77211);
+        padding: 60px; /* Increased padding */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 400px; /* Increased width */
+    }
+
+.login-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.login-subtitle {
+    font-size: 1.2em;
+    color: #e7dfdf;
+    margin-bottom: 20px;
+}
+
+.login-welcome {
+    font-size: 1em;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.login-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+.signup-link {
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+/* Signup Styles */
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.signup-box {
+    background: linear-gradient(45deg, #ff73b3, #b77211);
+    padding: 60px; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px; /* Increased width */
+}
+
+.signup-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.signup-subtitle {
+    font-size: 1.2em;
+    color: #e3d6d6;
+    margin-bottom: 20px;
+}
+
+.signup-welcome {
+    font-size: 1em;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.signup-button {
+    background-color: #007BFF;
+    color: #fff;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.signup-button:hover {
+    background-color: #0056b3;
+}
+
+.login-link {
+    margin-top: 20px;
+}
+
+.login-link a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+ /* Home.csS */ 
+ .dashboard-container {
+    padding: 20px;
+    background-color: #f0f2f5;
+}
+
+.user-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logout-button {
+    background-color: #ff4d4f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #ff7875;
+}
+
+.expense-form-container {
+    margin-bottom: 20px;
+}
+
+.expense-list {
+    margin-top: 20px;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.edit-input {
+    width: 100px;
+}
+
+.save-button, .edit-button, .delete-button {
+    background-color: #1890ff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.save-button:hover, .edit-button:hover, .delete-button:hover {
+    background-color: #40a9ff;
+}
+  /* ExpenseDetail.CSS */
+
+  .amounts-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.income-amount, .expense-amount {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.income-amount {
+    color: #27ae60;
+}
+
+.expense-amount {
+    color: #c0392b;
+}
+ /* ExpenseForm.CSS */
+
+ .container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+    font-weight: 700;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+label {
+    font-size: 16px;
+    margin-right: 20px;
+    color: #555;
+    font-weight: 600;
+    flex-basis: 30%;
+    text-align: left;
+}
+
+input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 70%;
+    transition: border 0.3s;
+}
+
+input:focus {
+    border-color: #40a9ff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(24, 144, 255, 0.2);
+}
+
+button {
+    padding: 14px 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #1890ff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #40a9ff;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #096dd9;
+}
+
+ /* ExpenseTable.css */ 
+
+ .expense-list {
+    margin-top: 20px;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.expense-item:hover {
+    transform: translateY(-3px);
+}
+
+.delete-button {
+    background-color: #ff4d4f;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+    background-color: #ff7875;
+}
+
+.expense-description {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.expense-amount {
+    font-size: 18px;
+    font-weight: bold;
+}
